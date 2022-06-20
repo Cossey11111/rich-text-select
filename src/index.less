@@ -1,0 +1,41 @@
+@import "~antd/dist/antd.less";
+
+.rich-editable {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 300px;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s;
+    word-break: break-all;
+    &:hover {
+      border-color: #40a9ff !important;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+      border-color: #40a9ff !important;
+    }
+    &:focus-visible {
+      outline: none !important;
+    }
+  }
+  /* placeholder code */
+  [contentEditable="true"]:empty:before {
+    content: "please input";
+    opacity: 0.6;
+  }
+  .is-editor-variable {
+    display: inline-block;
+    font-weight: 900;
+    color: #008dff;
+  }
